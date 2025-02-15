@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock title %}
+
+
+{% block body %}
+
+<center>
+   
+    <div class="slider">
+        <div class="box1">
+            <h1><a href="/home">MyBlog-Best Blogging Site For Bloggers</a></h1>&nbsp;
+    
+            <p>MyBlog is one of the best platform to share your information and publish blog.MyBlog is very popular and it
+                allowing users to post photos to their blogs. MyBlog is best free platform to blog-publishing service that
+                allows multi-user blogs. </p>&nbsp;
+    
+            <p>Now you know what MyBlog is... But let me tell you why you should choose MyBlog as your platform for building
+                a wonderful and professional blog. Here are few features of MyBlog which are definitely going to amaze you.
+                MyBlog is free and open source to express your thoughts on that particular topic. You just need to create a
+                new blog with a particular Title and Address.</p>
+        </div>
+    
+        <div class="box2">
+            <img src="https://media.istockphoto.com/id/1198931639/photo/writing-a-blog-blogger-influencer-reading-text-on-screen.jpg?b=1&s=170667a&w=0&k=20&c=kKruwyP33_KtX5FX4wPBkqXbViH8_DHiEPBq6OXTEyM="
+                alt="Blog image">
+        </div>
+    </div>
+    <hr>
+
+    <div class="row1">
+        <div class="article">
+            <h1>Our TopMost Posts</h1>
+        </div>
+
+        <form action="/search" method="get">
+            <input type="text" name="query" id="query" placeholder=" Search Your Blog">
+            <button type="submit">Search</button>
+            <button class="btn"><a href="/article">CreateYourOwnBlog</a></button>
+        </form>
+
+    
+
+    </div>
+    <hr>
+
+    {% for i in obj %}
+    <div class="card">
+
+        <div class="content">
+
+            <div class="img">
+                <img src="media/{{i.img}}" alt="image" width="300px">
+            </div>
+
+            <div class="details">
+                <h2><a href="/home">{{i.title}}</a></h2>&nbsp;
+                <h4>By, {{i.name}}</h4>&nbsp;
+                <p>{{i.content}}</p>
+                <button><a href="edit/{{i.title}}">Edit Your Blog</a> </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% endfor%}
+
+</center>
+
+{% endblock body %}

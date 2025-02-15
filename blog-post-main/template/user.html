@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %} User Registration {% endblock title %}
+
+{% block body %}
+
+<center>
+
+    <div class="register">
+
+        <h1>Create Your Account</h1>
+
+        <form action="/user" method="post">
+            {% csrf_token %}
+
+            <input type="text" name="username" placeholder="Username" required><br>
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Enter Your Password" required><br>
+            <button type="submit">Sign Up</button>
+        </form>
+
+    </div>
+</center>
+
+{% endblock body %}

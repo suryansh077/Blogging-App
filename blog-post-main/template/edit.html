@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %} Edit {% endblock title %}
+
+{% block body %}
+
+<center>
+  
+    <div class="article1" style="background-color: burlywood;">
+        <div class="heading">
+            <h1>Edit Your Blog</h1>
+         </div>
+
+       <form action="/update/{{obj.title}}" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="name"  value="{{obj.name}}"><br>
+        <input type="text" name="title"  value="{{obj.title}}"><br>
+        <textarea name="content"  cols="30" rows="10" >{{obj.content}}</textarea><br>
+        <button type="submit">Update Blog</button>
+       
+       </form>
+
+    </div>
+</center>
+
+{% endblock body %}

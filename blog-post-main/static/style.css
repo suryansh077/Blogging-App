@@ -1,0 +1,343 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+
+}
+
+body {
+    background-color: rgba(211, 211, 211, 0.466);
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+
+}
+
+.navbar {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    height: 10vh;
+   
+}
+
+.navbar h1 {
+    font-size: 45px;
+    margin: 0 540px 0 25px;
+}
+
+.navbar button {
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.row1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+.row1 .article h1 {
+    font-size: 40px;
+    margin: 0 60px 0 10px;
+}
+
+.row2 {
+    margin: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.row2 h2 {
+    font-size: 35px;
+    margin-left: 5px;
+}
+
+.row3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+}
+
+
+form input {
+    width: 300px;
+    border-radius: 25px;
+    margin-left: 20px;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+form button {
+    padding: 15px;
+    margin-left: 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    background-color: white;
+}
+
+form button a{
+     text-decoration: none;
+     color: black;
+}
+
+form .btn{
+    margin-left:90px ;
+}
+
+form .btnh{
+    margin-right:305px ;
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.673);
+    color: white;
+    width: 95%;
+    margin: 30px 0 20px 0;
+}
+
+.card .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+
+}
+
+.card .content .img,
+.details {
+    padding: 20px;
+}
+
+.card .content h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.card .content button {
+    float: right;
+    background-color: cadetblue;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.card .content button a {
+    text-decoration: none;
+    color: black;
+}
+
+.slider {
+    margin: 30px 0 20px 0;
+    padding: 0 30px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+}
+
+.slider .box1 {
+    padding: 30px;
+}
+
+.slider .box2 img {
+    width: 400px;
+    border-radius: 50px;
+}
+
+.slider .box1 h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.heading h1 {
+    margin: 30px 0 40px 0 ;
+    font-size: 40px;
+}
+
+.article1 {
+    margin: 30px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.article1 input,
+textarea {
+    width: 50vw;
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+
+}
+
+.article1 .img {
+    border: none;
+}
+
+.article1 button {
+    background-color: cadetblue;
+    color: black;
+    padding: 15px;
+    margin: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.article1 a {
+    background-color: cadetblue;
+    color: black;
+    text-decoration: none;
+    margin: 20px;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 25px;
+    font-size: 1.05rem;
+    font-weight: bold;
+}
+
+.container {
+    background-color: burlywood;
+    max-width: 800px;
+    margin: 50px 0;
+    height: 70vh;
+    border: 1px solid black;
+    border-radius: 8px;
+    
+}
+
+.container form {
+    margin-top: 50px ; 
+}
+
+.container h1 {
+   margin: 50px 0;
+   font-size: 40px;
+}
+
+.container input {
+    width: 500px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.container button {
+    width: 90px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+.container p a {
+    background-color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    text-decoration: none;
+    border: 2px solid grey;
+    border-radius: 20px;
+    padding: 7px;
+    color: black;
+}
+
+.register {
+    background-color: burlywood;
+    border: 1px solid black;
+    max-width: 700px;
+    margin: 50px;
+    padding: 30px;
+    border-radius: 8px;
+
+}
+
+.register h1 {
+    margin-bottom: 70px;
+    font-size: 40px;
+
+}
+
+.register input {
+    width: 500px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+.register button {
+    width: 90px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.footer {
+    background-color: cadetblue;
+    padding: 10px;
+    
+}
+
+.foothead{
+    margin: 20px;
+    padding: 10px;
+}
+
+.columns{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.columns .column1,.column3{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;   
+}
+
+.columns .column1 p,.column3 p {
+    padding: 3px;
+}
+
+.columns .column2 h2{
+    margin: 20px;
+}
+
+.columns .column2 a{
+    padding: 3px;
+}

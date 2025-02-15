@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Search Results {% endblock title %}
+
+{% block body %}
+<center>
+
+    <div class="row3">
+        <!-- <div class="article">
+            <h1>Searched Posts</h1>
+        </div> -->
+
+        <form action="/search" method="get">
+            <button class="btnh"><a href="/home">Home</a></button>
+            <button class="btn"><a href="/article">CreateYourOwnBlog</a></button>
+            <input type="text" name="query" id="query" placeholder=" Search Your Blog">
+            <button type="submit">Search</button>
+        </form>
+
+    </div>
+    <hr>
+
+    <div class="row2">
+        <h2>Your Search Results...</h2>
+    </div>
+
+    {% for j in sch %}
+
+    <div class="card">
+
+        <div class="content">
+
+            <div class="img">
+                <img src="media/{{j.img}}" alt="image" width="300px">
+            </div>
+
+            <div class="details">
+                <h2><a href="/home">{{j.title}}</a></h2>&nbsp;
+                <h4>By, {{j.name}}</h4>&nbsp;
+                <p>{{j.content}}</p>
+                <button><a href="edit/{{j.title}}">Edit Your Blog</a> </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    {% endfor%}
+
+</center>
+
+{% endblock body %}

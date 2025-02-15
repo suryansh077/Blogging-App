@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}| MyBlog-Best blogging site</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.jpg' %}" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="{% static 'reponsive.css' %}"> -->
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="navbar">
+
+            <h1> <a href="/home">Welcome To MyBlog</a> </h1>
+            <button><a href="/">Login</a></button>
+            <button><a href="/user">Register</a></button>
+
+        </div>
+
+        {% block body %}
+
+        {% endblock body %}
+
+        <div class="footer">
+        
+            <div class="columns">
+
+                <div class="column1">
+                    <h2>Developed By :</h2>&nbsp;
+                    <p>Abhishek Chauhan</p>
+                    <p>Suryansh Pratap Singh</p>
+                    <!-- <p>Avinash Singh</p>
+                    <p>Abhay Kumar Maurya</p>
+                    <p>Chandramani Mishra</p> -->
+                </div>
+
+                <div class="column2">
+                    <h2>Connect With Us :</h2>&nbsp;
+                    <a href="https://www.facebook.com/shivan9shu"><img src="media/facebook.png" alt="Facebook" width="30px"></a>
+                    <a href="https://twitter.com/MohitMi23442750?s=08"><img src="media/twitter.png" alt="Twitter" width="30px"></a>
+                    <a href="https://instagram.com/a.b.h.a.y._01?igshid=ZGUzMzM3NWJiOQ=="><img src="media/instagram.png" alt="Instagram" width="30px"></a>
+                    <a href="https://www.linkedin.com/in/sachin-yadav-977041239/"><img src="media/linkedin.png" alt="Linkedin" width="30px"></a>
+                    <a href="https://youtube.com/@dreamdayvlogs/"><img src="media/youtube.png" alt="Youtube" width="30px"></a>
+                </div>
+
+                <div class="column3">
+                    <h2>Categories :</h2>&nbsp;
+                    <p>Travelling</p>
+                    <p>Fooding</p>
+                    <p>Technology</p>
+                    <p>Health</p>
+                    <p>Business</p>
+                    <p>Fashion</p>
+                </div>
+
+            </div>
+            <hr>
+
+            <center>
+                <div class="foothead">
+                    <h1> Copyright &copy MyBlog-Best Blogging Site </h1>
+                </div>
+            </center>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

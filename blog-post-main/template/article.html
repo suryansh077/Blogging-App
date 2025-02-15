@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %} BlogPost {% endblock title %}
+
+{% block body %}
+
+<center>
+   
+    <div class="article1" style="background-color: burlywood;">
+        <div class="heading">
+            <h1>Create Your Own Blog</h1>
+         </div>
+
+       <form action="/article" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+    
+        <input type="text" name="name" placeholder="Enter Your Name"><br>
+        <input type="text" name="title" placeholder="Title"><br>
+        <textarea name="content"  cols="30" rows="10" placeholder="Create Your Blog Post"></textarea><br>
+        <input class="img" type="file" name="img"><br>
+        <button type="submit">Post Your Blog</button>
+        <a href="/home">Here's Your Blog</a>
+    
+       </form>
+    </div>
+
+</center>
+
+{% endblock body %}
